@@ -6,6 +6,8 @@
     </head>
 
     <body>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>  
+        <script src="script.js"></script>
 
         <header>
             <div id="name">
@@ -22,7 +24,28 @@
             </div>
 
             <div id="form">
-                There
+                <form>
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="fname">
+                </form>
+
+                <form>
+                    <label for="fmail">E-Mail</label>
+                    <input type="text" id="fmail" name="fmail">
+                </form>   
+                
+                <p style="color: #01BAEF;"> 
+                    s
+                </p>
+
+                <form>
+                    <label for="fmessage">Message</label>
+                    <input type="text" id="fmessage" name="fmessage">
+                </form>
+                
+                <form method="post">
+                    <button id="send" type="button" onclick="getFormInfo();">Send</button>
+                </form>  
             </div>
         </div>
 

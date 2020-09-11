@@ -1,6 +1,8 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     color: #FBFBFF;
+    padding: 0px;
+    margin: 0px;
 }
 
 body{
@@ -9,14 +11,15 @@ body{
 
 header{
     background-color: #01BAEF;
-    padding: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     border-radius: 5px;
+    box-shadow: 0px 1px 5px #01BAEF;
 }
 
 #name{
     text-align: center;
+    font-size: 25;
 }
 
 #text {
@@ -27,6 +30,7 @@ header{
     margin-top: 5px;;
     height: 500px;
     border-radius: 5px;
+    box-shadow: 0px 1px 5px #B80C09;
 }
 
 #text > p{
@@ -42,10 +46,47 @@ header{
     margin-top: 5px;
     height: 500px;
     border-radius: 5px;
+    box-shadow: 0px 1px 5px #01BAEF;
+}
+
+#form > form{
+    padding: 5px;
+    padding-top: 10px;
+    border-bottom: #B80C09;
+}
+
+#fname, #fmail, #fmessage {
+    width: 100%;
+    padding: 5px;
+    background-color: #01BAEF;
+    box-sizing: border-box;
+    border: 0px solid #01BAEF;
+    border-bottom: 2px solid #F41915;
+    outline: none;
+    color: #EBEBFF;
+}
+
+#gfmessage{
+    padding-top: 50px;
+}
+
+#fname:focus{
+    border: #01BAEF;
+    border-bottom: 2px solid #B80C09;
 }
 
 #Infohead{
     padding: 5px;
     padding-top: 10px;
     margin-top: 0px;
+}
+
+#send{
+    background-color: #EBEBFF;
+    box-shadow: 0px 1px 5px #EBEBFF;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    width: 100px;
 }
