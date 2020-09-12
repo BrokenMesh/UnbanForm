@@ -99,3 +99,9 @@ header{
     background-color: lightblue;
     box-shadow: 0px 1px 5px lightblue;
 }
+
+#wassent{
+    font-size: 0px;
+    color: #F41915;
+    padding: 5px;
+}

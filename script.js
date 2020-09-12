@@ -3,10 +3,22 @@ function getFormInfo(){
     var femail = document.getElementById("fmail").value;
     var fmessage = document.getElementById("fmessage").value;
 
-    sendEmail(femail, "Hello " + fname, "After very deep analysis of the experienced moderation team we coude conclude that you are retarded. your message: \n" + fmessage);
+	if(fname.length == 0 || femail.length == 0 || fmessage.length == 0) {
+		alert("Fill in all fields");
+		return;
+	}
+
+    sendEmail(femail, "Unban von " + fname, "Dein unban versuch wurde entfangen. deine message: \n" + fmessage);
+	let s = sendEmail("gabs4k@outlook.de", "Unban für " + fname, "User '" + fname + "' (" + femail + ") verlangt einen unban. die message: " + fmessage);
+
+	if(s){
+		document.getElementById("wassent").style.fontSize = 11;
+	}
 }
 
 function sendEmail(to, sub, mes) {
+	let state = false;
+
 	Email.send({
 	Host: "smtp.gmail.com",
 	Username : "norep585@gmail.com",
@@ -16,6 +28,7 @@ function sendEmail(to, sub, mes) {
 	Subject : sub,
 	Body : mes,
 	}).then(
-		message => alert("Form send \nWell done")
+		state = true
 	);
+	return state;
 }
