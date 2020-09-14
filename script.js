@@ -9,7 +9,7 @@ function getFormInfo(){
 	}
 
     sendEmail(femail, "Unban von " + fname, "Dein unban versuch wurde entfangen. deine message: \n" + fmessage);
-	let s = sendEmail("gabs4k@outlook.de", "Unban für " + fname, "User '" + fname + "' (" + femail + ") verlangt einen unban. die message: " + fmessage);
+	let s = sendEmail("mezivunban@outlook.com", "Unban für " + fname, "User '" + fname + "' (" + femail + ") verlangt einen unban. die message: " + fmessage);
 
 	if(s){
 		document.getElementById("wassent").style.fontSize = 11;
