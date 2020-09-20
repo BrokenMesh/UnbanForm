@@ -1,0 +1,48 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #303030;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url('res/Minecraft2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px #FFFFFF;
+}
+
+#name{
+    text-align: center;
+    font-size: 25;
+}
+
+#Angebote{
+    background-color:#C6C6C6;
+    float: left;
+    width: 40%;
+    padding: 5px;
+    margin-top: 5px;;
+    height: 1000px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px #C6C6C6;
+}
+
+#Login{
+    background-color: #FFFFFF;
+    float: right;
+    width: calc(100% - 40% - 25px);
+    padding: 5px;
+    margin-top: 5px;
+    height: 1000px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px #FFFFFF;
+}
