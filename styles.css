@@ -1,20 +1,23 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
-    color: #FBFBFF;
+    color: #303030;
     padding: 0px;
     margin: 0px;
 }
 
 body{
-    background-color: #040F16;
+    background-image: url('res/Minecraft2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header{
-    background-color: #01BAEF;
+    background-color: #FFFFFF;
     padding-top: 1px;
     padding-bottom: 1px;
     border-radius: 5px;
-    box-shadow: 0px 1px 5px #01BAEF;
+    box-shadow: 0px 1px 5px #FFFFFF;
 }
 
 #name{
@@ -23,14 +26,14 @@ header{
 }
 
 #text {
-    background-color: #B80C09;
+    background-color:#C6C6C6;
     float: left;
     width: 30%;
     padding: 5px;
     margin-top: 5px;;
     height: 500px;
     border-radius: 5px;
-    box-shadow: 0px 1px 5px #B80C09;
+    box-shadow: 0px 1px 5px #C6C6C6;
 }
 
 #text > p{
@@ -39,31 +42,31 @@ header{
 }
 
 #form{
-    background-color: #01BAEF;
+    background-color: #FFFFFF;
     float: right;
     width: calc(100% - 30% - 25px);
     padding: 5px;
     margin-top: 5px;
     height: 500px;
     border-radius: 5px;
-    box-shadow: 0px 1px 5px #01BAEF;
+    box-shadow: 0px 1px 5px #FFFFFF;
 }
 
 #form > form{
     padding: 5px;
     padding-top: 10px;
-    border-bottom: #B80C09;
+    border-bottom: #919191;
 }
 
 #fname, #fmail, #fmessage {
     width: 100%;
     padding: 5px;
-    background-color: #01BAEF;
+    background-color:#FFFFFF;
     box-sizing: border-box;
-    border: 0px solid #01BAEF;
-    border-bottom: 2px solid #F41915;
+    border: 0px solid #FFFFFF;
+    border-bottom: 2px solid #919191;
     outline: none;
-    color: #EBEBFF;
+    color: #303030;
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
@@ -73,8 +76,8 @@ header{
 }
 
 #fname:focus, #fmail:focus, #fmessage:focus{
-    border: #01BAEF;
-    border-bottom: 2px solid #B80C09;
+    border: #FFFFFF;
+    border-bottom: 2px solid #919191;
 }
 
 #Infohead{
@@ -84,8 +87,8 @@ header{
 }
 
 #send{
-    background-color: #EBEBFF;
-    box-shadow: 0px 1px 5px #EBEBFF;
+    background-color: #919191;
+    box-shadow: 0px 1px 5px #919191;
     border: none;
     border-radius: 5px;
     outline: none;
@@ -96,8 +99,8 @@ header{
 }
 
 #send:hover{
-    background-color: lightblue;
-    box-shadow: 0px 1px 5px lightblue;
+    background-color: #C6C6C6;
+    box-shadow: 0px 1px 5px #C6C6C6;
 }
 
 #wassent{
